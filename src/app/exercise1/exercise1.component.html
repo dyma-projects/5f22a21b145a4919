@@ -1,0 +1,10 @@
+<div>
+  <label for="input">Saisir un mot: </label>
+  <input
+    type="text"
+    name="input"
+    [value]="recupValue"
+    (input)="recupValue = $event.target.value"
+  />
+  <p>Valeur du champ input:<span [ngStyle]="colorRecupValue">{{ recupValue }}</span></p>
+</div>
